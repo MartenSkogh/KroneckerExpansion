@@ -2,11 +2,16 @@
 
 def parse_tex_str(tex_str):
 
-    subs = {'Q^+': 'X+-iY',
+    subs = {'-Q^+': '-X+iY',
+            'Q^+': 'X+-iY',
+            '-Q^-': '-X+-iY',
             'Q^-': 'X+iY'}
 
+    tex_str = tex_str.replace('^+', '^+,')
+    tex_str = tex_str.replace('^-', '^-,')
+
     for key in subs:
-        tex_str = tex_str.replace(key, subs[key] + ',')
+        tex_str = tex_str.replace(key, subs[key])
 
     if tex_str[-1] == ',':
         tex_str = tex_str[:-1]
@@ -69,7 +74,10 @@ if __name__ == "__main__":
         tex_strs = input_file.readlines()
 
     for tex_str in tex_strs:
-        parsed_str = parse_tex_str(tex_str.strip())
+        tex_str = tex_str.strip()
+        #print(tex_str)
+
+        parsed_str = parse_tex_str(tex_str)
         #print(parsed_str)
 
         expanded_terms = expand_addition(parsed_str)
