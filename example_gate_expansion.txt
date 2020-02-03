@@ -1,0 +1,12 @@
+e^{i\frac{\theta_{20}}{2}IXZY}     
+e^{-i\frac{\theta_{20}}{2}IYZX}    
+e^{i\frac{\theta_{31}}{2}XZYI}     
+e^{-i\frac{\theta_{31}}{2}YZXI}    
+e^{i\frac{\theta_{2310}}{8}YXXX}   
+e^{i\frac{\theta_{2310}}{8}XYXX}   
+e^{-i\frac{\theta_{2310}}{8}XXYX}  
+e^{i\frac{\theta_{2310}}{8}YYYX}   
+e^{-i\frac{\theta_{2310}}{8}XXXY}  
+e^{i\frac{\theta_{2310}}{8}YYXY}   
+e^{-i\frac{\theta_{2310}}{8}YXYY}  
+e^{-i\frac{\theta_{2310}}{8}XYYY}  
